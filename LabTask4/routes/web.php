@@ -21,8 +21,7 @@ Route::get('/', function () {
 Route::get('/home',[productController::class,'homeView'])->name('home');
 Route::get('/product/add',[productController::class,'addProduct'])->name('product.add');
 Route::post('/product/add',[productController::class,'submitProduct'])->name('product.sub');
-//Route::get('/product/edit/{id}',[productController::class,'editProduct'])->name('product.edit');
-//Route::post('/product/edit/{id}',[productController::class,'update'])->name('product.edit');
+Route::get('/product/edit/{id}',[productController::class,'editProduct'])->name('product.edit');
+Route::post('/product/edit/{id}',[productController::class,'update'])->name('product.edit');
 Route::get('/product/list',[productController::class,'viewProduct'])->name('product.list');
-//Route::get('/product/details/{id}',[productController::class,'productdetails'])->name('product.details');
-//Route::get('/product/delete/{id}',[productController::class,'deleteProduct'])->name('product.delete');
+Route::get('/product/delete/{id}',[productController::class,'deleteProduct'])->name('product.delete');

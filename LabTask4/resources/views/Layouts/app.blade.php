@@ -11,9 +11,7 @@
     @section('navbar')
     <a class="btn-btn-primary" href="{{ route('home') }}">Home</a>
     <a class="btn-btn-primary" href="{{ route('product.add') }}">Add Product</a>
- {{--  <a class="btn-btn-primary" href="{{ route('product.list') }}">Edit Product</a>
-    <a class="btn-btn-primary" href="{{ route('product.details') }}">Add Product</a>
-    <a class="btn-btn-primary" href="{{ route('product.edit') }}">Edit Product</a>  --}}
+    <a class="btn-btn-primary" href="{{ route('product.list') }}">Product List</a>
     @show
     <div class="container">
         @yield('content')

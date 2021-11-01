@@ -7,7 +7,7 @@
 <h3>Add product</h3>
 </head>
 <body>
-<form action="{{route('product.sub')}}" method="post">
+<form action="{{route('product.sub')}}" method="post" enctype="multipart/form-data">
  {{csrf_field()}}
 <label>Product Name:</label>
 <input type="text" name="pname" placeholder="enter product name"><br><br>
